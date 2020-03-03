@@ -7,15 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1465DDC9240D390700822630 /* QuestionsViewControler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1465DDC8240D390700822630 /* QuestionsViewControler.swift */; };
 		147A530E240C152300D7E1B6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147A530D240C152300D7E1B6 /* AppDelegate.swift */; };
 		147A5310240C152300D7E1B6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147A530F240C152300D7E1B6 /* SceneDelegate.swift */; };
 		147A5312240C152300D7E1B6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147A5311240C152300D7E1B6 /* ViewController.swift */; };
 		147A5315240C152300D7E1B6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 147A5313240C152300D7E1B6 /* Main.storyboard */; };
 		147A5317240C152700D7E1B6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 147A5316240C152700D7E1B6 /* Assets.xcassets */; };
 		147A531A240C152700D7E1B6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 147A5318240C152700D7E1B6 /* LaunchScreen.storyboard */; };
+		147A5324240C2A6200D7E1B6 /* BotaoComBorda.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147A5323240C2A6200D7E1B6 /* BotaoComBorda.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1465DDC8240D390700822630 /* QuestionsViewControler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionsViewControler.swift; sourceTree = "<group>"; };
 		147A530A240C152300D7E1B6 /* quizNight.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = quizNight.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		147A530D240C152300D7E1B6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		147A530F240C152300D7E1B6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +27,7 @@
 		147A5316240C152700D7E1B6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		147A5319240C152700D7E1B6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		147A531B240C152700D7E1B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		147A5323240C2A6200D7E1B6 /* BotaoComBorda.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BotaoComBorda.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +67,8 @@
 				147A5316240C152700D7E1B6 /* Assets.xcassets */,
 				147A5318240C152700D7E1B6 /* LaunchScreen.storyboard */,
 				147A531B240C152700D7E1B6 /* Info.plist */,
+				147A5323240C2A6200D7E1B6 /* BotaoComBorda.swift */,
+				1465DDC8240D390700822630 /* QuestionsViewControler.swift */,
 			);
 			path = quizNight;
 			sourceTree = "<group>";
@@ -140,6 +146,8 @@
 			files = (
 				147A5312240C152300D7E1B6 /* ViewController.swift in Sources */,
 				147A530E240C152300D7E1B6 /* AppDelegate.swift in Sources */,
+				147A5324240C2A6200D7E1B6 /* BotaoComBorda.swift in Sources */,
+				1465DDC9240D390700822630 /* QuestionsViewControler.swift in Sources */,
 				147A5310240C152300D7E1B6 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

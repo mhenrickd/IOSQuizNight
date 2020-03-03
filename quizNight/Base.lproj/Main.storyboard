@@ -141,6 +141,9 @@
                                         <state key="normal" title="Jogar">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="btn1Click:" destination="tzj-F1-vHU" eventType="touchUpInside" id="NRB-ms-DfE"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gKL-Ln-4ex" customClass="BotaoComBorda" customModule="quizNight" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="32" width="375" height="42"/>
@@ -149,6 +152,9 @@
                                         <state key="normal" title="Jogar">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="btn2Click:" destination="tzj-F1-vHU" eventType="touchUpInside" id="JAg-tN-B9w"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MZh-CU-l0x" customClass="BotaoComBorda" customModule="quizNight" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="84" width="375" height="42"/>
@@ -157,6 +163,9 @@
                                         <state key="normal" title="Jogar">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="btn3Click:" destination="tzj-F1-vHU" eventType="touchUpInside" id="9SX-ll-1o8"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DK7-Xo-HdD" customClass="BotaoComBorda" customModule="quizNight" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="136" width="375" height="42"/>
@@ -165,6 +174,9 @@
                                         <state key="normal" title="Jogar">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="btn4Click:" destination="tzj-F1-vHU" eventType="touchUpInside" id="m9Z-Xj-XjF"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
