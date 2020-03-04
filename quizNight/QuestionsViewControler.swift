@@ -16,6 +16,7 @@ class QuestionsViewControler: UIViewController {
     var cities : [String] = ["Belo Horizonte", "Toronto", "New York", "Rio de Janeiro"]
     var options : [String] = ["São Paulo", "Vancouver", "Paris", "Ribeirão das Neves"]
     var rightOption : Int!
+    var scoreboard : Int = 0
     
     func loadQuestions () {
         if(cities.count == 0){
@@ -67,8 +68,10 @@ class QuestionsViewControler: UIViewController {
     func buttonClick (_ num: Int){
         if num == rightOption {
             print("Acertou!!!")
+            scoreboard += 1
         } else {
             print("Eroooou")
+            performSegue(withIdentifier: "gameOver", sender: self)
         }
         loadQuestions()
     }
@@ -90,5 +93,11 @@ class QuestionsViewControler: UIViewController {
         super.viewDidLoad()
         options.append(contentsOf: cities)
         loadQuestions()
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let destino = segue.destination as? GameOverViewController{
+            destino.score = scoreboard 
+        }
     }
 }

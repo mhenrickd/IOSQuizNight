@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="rpr-aW-1c6">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
@@ -88,27 +88,44 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" id="6dL-zD-Vv2"/>
                     <connections>
                         <outlet property="quizNightLogo" destination="kC8-ya-cvM" id="2Qp-Qm-bqi"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="132" y="102.99850074962519"/>
+            <point key="canvasLocation" x="190" y="103"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Jnb-DZ-VPL">
+            <objects>
+                <navigationController id="rpr-aW-1c6" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="l7p-XZ-B8A">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="nQL-M3-ZLU"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Tdb-4n-8ks" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-540" y="103"/>
         </scene>
         <!--Questions View Controler-->
         <scene sceneID="V8q-7Q-i3E">
             <objects>
-                <viewController id="tzj-F1-vHU" customClass="QuestionsViewControler" customModule="quizNight" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="tzj-F1-vHU" customClass="QuestionsViewControler" customModule="quizNight" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="KaL-OK-CBs">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="NNu-Sh-agu">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5dP-aQ-yjI" userLabel="rectangle">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="hZr-09-wk3">
                                         <rect key="frame" x="-1092.5" y="0.0" width="2560" height="314"/>
@@ -132,10 +149,10 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="KWf-fP-TuR">
-                                <rect key="frame" x="0.0" y="459" width="375" height="178"/>
+                                <rect key="frame" x="0.0" y="459" width="375" height="198"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" verticalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wi4-GL-uM0" customClass="BotaoComBorda" customModule="quizNight" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="22"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="42"/>
                                         <color key="backgroundColor" red="0.2717328966" green="0.012582686730000001" blue="0.0" alpha="0.20086927816901409" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                         <state key="normal" title="Jogar">
@@ -146,7 +163,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gKL-Ln-4ex" customClass="BotaoComBorda" customModule="quizNight" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="32" width="375" height="42"/>
+                                        <rect key="frame" x="0.0" y="52" width="375" height="42"/>
                                         <color key="backgroundColor" red="0.2717328966" green="0.012582686730000001" blue="0.0" alpha="0.20086927816901409" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                         <state key="normal" title="Jogar">
@@ -157,7 +174,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MZh-CU-l0x" customClass="BotaoComBorda" customModule="quizNight" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="84" width="375" height="42"/>
+                                        <rect key="frame" x="0.0" y="104" width="375" height="42"/>
                                         <color key="backgroundColor" red="0.2717328966" green="0.012582686730000001" blue="0.0" alpha="0.20086927816901409" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                         <state key="normal" title="Jogar">
@@ -168,7 +185,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DK7-Xo-HdD" customClass="BotaoComBorda" customModule="quizNight" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="136" width="375" height="42"/>
+                                        <rect key="frame" x="0.0" y="156" width="375" height="42"/>
                                         <color key="backgroundColor" red="0.2717328966" green="0.012582686730000001" blue="0.0" alpha="0.20086927816901409" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                         <state key="normal" title="Jogar">
@@ -208,16 +225,17 @@
                     <connections>
                         <outlet property="dicaImg" destination="hZr-09-wk3" id="KPo-06-ZHg"/>
                         <outlet property="stackButtons" destination="KWf-fP-TuR" id="fO5-KC-upR"/>
+                        <segue destination="AsR-Y6-S4z" kind="show" identifier="gameOver" id="maU-Ak-MnC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KfO-d6-BOQ" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="788" y="102.99850074962519"/>
+            <point key="canvasLocation" x="879" y="103"/>
         </scene>
-        <!--View Controller-->
+        <!--Game Over View Controller-->
         <scene sceneID="HcE-vn-HtG">
             <objects>
-                <viewController id="AsR-Y6-S4z" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="AsR-Y6-S4z" customClass="GameOverViewController" customModule="quizNight" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dvu-h8-Fuk">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -252,6 +270,9 @@
                                         <state key="normal" title="Jogar Novamente">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="gameover:" destination="AsR-Y6-S4z" eventType="touchUpInside" id="PKz-Ba-Yg4"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.79516945419999996" colorSpace="custom" customColorSpace="sRGB"/>
@@ -287,6 +308,9 @@
                         <viewLayoutGuide key="safeArea" id="9pA-wm-lzf"/>
                     </view>
                     <navigationItem key="navigationItem" id="Q3H-K9-zLf"/>
+                    <connections>
+                        <outlet property="ScoreboardLabel" destination="mcA-fX-u6i" id="gId-ty-OSa"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="P7x-5F-Af0" sceneMemberID="firstResponder"/>
             </objects>
