@@ -12,14 +12,14 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="quizNight" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="K8e-In-niP">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="V8g-Ov-161" userLabel="rectangle">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo2" translatesAutoresizingMaskIntoConstraints="NO" id="kC8-ya-cvM">
                                         <rect key="frame" x="67.5" y="28" width="240" height="225"/>
@@ -29,7 +29,7 @@
                                         </constraints>
                                     </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nN4-QS-0RE" customClass="BotaoComBorda" customModule="quizNight" customModuleProvider="target">
-                                        <rect key="frame" x="4" y="603" width="367" height="56"/>
+                                        <rect key="frame" x="4" y="583" width="367" height="56"/>
                                         <color key="backgroundColor" red="0.27557367090000001" green="0.012715239079999999" blue="0.0" alpha="0.20397777288732394" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="nN4-QS-0RE" secondAttribute="height" multiplier="367:56" id="VfU-KC-ZGf"/>
@@ -59,7 +59,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Descubra qual a cidade a partir da foto" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yqf-01-lay">
-                                <rect key="frame" x="0.0" y="275.5" width="375" height="90"/>
+                                <rect key="frame" x="0.0" y="265.5" width="375" height="90"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="90" id="Cmu-5p-IDe"/>
                                     <constraint firstAttribute="width" secondItem="Yqf-01-lay" secondAttribute="height" multiplier="25:6" id="Oag-3c-tdg"/>
@@ -88,6 +88,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" id="6px-Kb-Fbh"/>
                     <connections>
                         <outlet property="quizNightLogo" destination="kC8-ya-cvM" id="2Qp-Qm-bqi"/>
                     </connections>
@@ -208,16 +209,17 @@
                     <connections>
                         <outlet property="dicaImg" destination="hZr-09-wk3" id="KPo-06-ZHg"/>
                         <outlet property="stackButtons" destination="KWf-fP-TuR" id="fO5-KC-upR"/>
+                        <segue destination="AsR-Y6-S4z" kind="presentation" identifier="gameOver" modalPresentationStyle="fullScreen" id="syU-C5-MhP"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KfO-d6-BOQ" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="788" y="102.99850074962519"/>
         </scene>
-        <!--View Controller-->
+        <!--Game Over View Controller-->
         <scene sceneID="HcE-vn-HtG">
             <objects>
-                <viewController id="AsR-Y6-S4z" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="gameOver" id="AsR-Y6-S4z" customClass="GameOverViewController" customModule="quizNight" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dvu-h8-Fuk">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -252,6 +254,9 @@
                                         <state key="normal" title="Jogar Novamente">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <segue destination="BYZ-38-t0r" kind="show" id="dJv-Ay-zJ7"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.79516945419999996" colorSpace="custom" customColorSpace="sRGB"/>
@@ -287,10 +292,13 @@
                         <viewLayoutGuide key="safeArea" id="9pA-wm-lzf"/>
                     </view>
                     <navigationItem key="navigationItem" id="Q3H-K9-zLf"/>
+                    <connections>
+                        <outlet property="scoreboardLabel" destination="mcA-fX-u6i" id="SXO-LF-Tne"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="P7x-5F-Af0" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1613.5999999999999" y="102.99850074962519"/>
+            <point key="canvasLocation" x="1502" y="103"/>
         </scene>
     </scenes>
     <resources>
