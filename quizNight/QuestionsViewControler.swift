@@ -20,6 +20,7 @@ class QuestionsViewControler: UIViewController {
     
     func loadQuestions () {
         if(cities.count == 0){
+            performSegue(withIdentifier: "gameOver", sender: self)
             return
         }
         let indice = Int(arc4random_uniform(UInt32(cities.count)))
