@@ -15,6 +15,7 @@
 		147A5317240C152700D7E1B6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 147A5316240C152700D7E1B6 /* Assets.xcassets */; };
 		147A531A240C152700D7E1B6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 147A5318240C152700D7E1B6 /* LaunchScreen.storyboard */; };
 		147A5324240C2A6200D7E1B6 /* BotaoComBorda.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147A5323240C2A6200D7E1B6 /* BotaoComBorda.swift */; };
+		1491FA8A240FE71F0046120E /* GameOverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1491FA89240FE71F0046120E /* GameOverViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		147A5319240C152700D7E1B6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		147A531B240C152700D7E1B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		147A5323240C2A6200D7E1B6 /* BotaoComBorda.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BotaoComBorda.swift; sourceTree = "<group>"; };
+		1491FA89240FE71F0046120E /* GameOverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameOverViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +71,7 @@
 				147A531B240C152700D7E1B6 /* Info.plist */,
 				147A5323240C2A6200D7E1B6 /* BotaoComBorda.swift */,
 				1465DDC8240D390700822630 /* QuestionsViewControler.swift */,
+				1491FA89240FE71F0046120E /* GameOverViewController.swift */,
 			);
 			path = quizNight;
 			sourceTree = "<group>";
@@ -146,6 +149,7 @@
 			files = (
 				147A5312240C152300D7E1B6 /* ViewController.swift in Sources */,
 				147A530E240C152300D7E1B6 /* AppDelegate.swift in Sources */,
+				1491FA8A240FE71F0046120E /* GameOverViewController.swift in Sources */,
 				147A5324240C2A6200D7E1B6 /* BotaoComBorda.swift in Sources */,
 				1465DDC9240D390700822630 /* QuestionsViewControler.swift in Sources */,
 				147A5310240C152300D7E1B6 /* SceneDelegate.swift in Sources */,
