@@ -132,11 +132,11 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="KWf-fP-TuR">
-                                <rect key="frame" x="0.0" y="459" width="375" height="178"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="KWf-fP-TuR">
+                                <rect key="frame" x="0.0" y="439" width="375" height="198"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" verticalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wi4-GL-uM0" customClass="BotaoComBorda" customModule="quizNight" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="22"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="42"/>
                                         <color key="backgroundColor" red="0.2717328966" green="0.012582686730000001" blue="0.0" alpha="0.20086927816901409" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                         <state key="normal" title="Jogar">
@@ -147,7 +147,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gKL-Ln-4ex" customClass="BotaoComBorda" customModule="quizNight" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="32" width="375" height="42"/>
+                                        <rect key="frame" x="0.0" y="52" width="375" height="42"/>
                                         <color key="backgroundColor" red="0.2717328966" green="0.012582686730000001" blue="0.0" alpha="0.20086927816901409" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                         <state key="normal" title="Jogar">
@@ -158,7 +158,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MZh-CU-l0x" customClass="BotaoComBorda" customModule="quizNight" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="84" width="375" height="42"/>
+                                        <rect key="frame" x="0.0" y="104" width="375" height="42"/>
                                         <color key="backgroundColor" red="0.2717328966" green="0.012582686730000001" blue="0.0" alpha="0.20086927816901409" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                         <state key="normal" title="Jogar">
@@ -169,7 +169,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DK7-Xo-HdD" customClass="BotaoComBorda" customModule="quizNight" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="136" width="375" height="42"/>
+                                        <rect key="frame" x="0.0" y="156" width="375" height="42"/>
                                         <color key="backgroundColor" red="0.2717328966" green="0.012582686730000001" blue="0.0" alpha="0.20086927816901409" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                         <state key="normal" title="Jogar">
@@ -189,7 +189,7 @@
                             <constraint firstItem="NNu-Sh-agu" firstAttribute="width" secondItem="KaL-OK-CBs" secondAttribute="width" id="BXE-rm-Q0N"/>
                             <constraint firstItem="NNu-Sh-agu" firstAttribute="centerY" secondItem="KaL-OK-CBs" secondAttribute="centerY" id="BkJ-gu-j0E"/>
                             <constraint firstItem="NNu-Sh-agu" firstAttribute="centerX" secondItem="KaL-OK-CBs" secondAttribute="centerX" id="F31-nm-Dtw"/>
-                            <constraint firstItem="KWf-fP-TuR" firstAttribute="top" secondItem="r5P-HY-dQG" secondAttribute="bottom" constant="20" id="Gw6-7d-6TL"/>
+                            <constraint firstItem="KWf-fP-TuR" firstAttribute="top" secondItem="r5P-HY-dQG" secondAttribute="bottom" id="Gw6-7d-6TL"/>
                             <constraint firstItem="NNu-Sh-agu" firstAttribute="centerY" secondItem="KaL-OK-CBs" secondAttribute="centerY" id="JhD-WN-Xhd"/>
                             <constraint firstItem="k7J-vO-7CF" firstAttribute="bottom" secondItem="KWf-fP-TuR" secondAttribute="bottom" constant="10" id="KAW-My-2y3"/>
                             <constraint firstItem="5dP-aQ-yjI" firstAttribute="height" secondItem="NNu-Sh-agu" secondAttribute="height" id="MfC-S7-e67"/>
@@ -249,7 +249,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s9s-vQ-mqo" customClass="BotaoComBorda" customModule="quizNight" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="612.5" width="375" height="42"/>
+                                        <rect key="frame" x="92" y="612.5" width="191" height="42"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                         <state key="normal" title="Jogar Novamente">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -261,13 +261,11 @@
                                 </subviews>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.79516945419999996" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="s9s-vQ-mqo" secondAttribute="trailing" id="30h-AG-dZE"/>
                                     <constraint firstItem="g0Y-kN-IEf" firstAttribute="centerX" secondItem="4qO-XY-HOm" secondAttribute="centerX" id="PbU-Td-Wrd"/>
                                     <constraint firstItem="mcA-fX-u6i" firstAttribute="centerY" secondItem="4qO-XY-HOm" secondAttribute="centerY" id="Qyf-iR-j8O"/>
                                     <constraint firstItem="312-Eg-ogt" firstAttribute="centerX" secondItem="4qO-XY-HOm" secondAttribute="centerX" id="SBS-aw-quN"/>
                                     <constraint firstItem="s9s-vQ-mqo" firstAttribute="centerX" secondItem="4qO-XY-HOm" secondAttribute="centerX" id="bgP-t3-AjT"/>
                                     <constraint firstItem="s9s-vQ-mqo" firstAttribute="centerY" secondItem="mcA-fX-u6i" secondAttribute="centerY" constant="300" id="iOV-kb-21m"/>
-                                    <constraint firstItem="s9s-vQ-mqo" firstAttribute="leading" secondItem="4qO-XY-HOm" secondAttribute="leading" id="kTc-lh-veq"/>
                                     <constraint firstItem="g0Y-kN-IEf" firstAttribute="top" secondItem="4qO-XY-HOm" secondAttribute="top" constant="20" id="m9t-lX-1yT"/>
                                     <constraint firstAttribute="trailing" secondItem="mcA-fX-u6i" secondAttribute="trailing" constant="15" id="n6T-G0-g1k"/>
                                     <constraint firstItem="s9s-vQ-mqo" firstAttribute="centerX" secondItem="4qO-XY-HOm" secondAttribute="centerX" id="nja-y7-lMg"/>
